@@ -1,0 +1,4 @@
+html {
+    -webkit-user-drag: none;
+    -webkit-user-drag: text;
+}

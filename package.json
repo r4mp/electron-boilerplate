@@ -1,0 +1,20 @@
+{
+  "name": "electron-boilerplate",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-osx && npm run build-linux && npm run build-windows",
+    "build-linux": "./build.sh linux $npm_package_productName npm_package_version $npm_package_electronVersion"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-packager": "^5.2.1",
+    "electron-prebuilt": "^0.37.1"
+  },
+  "dependencies": {
+    "crashreporter": "0.0.4"
+  }
+}
